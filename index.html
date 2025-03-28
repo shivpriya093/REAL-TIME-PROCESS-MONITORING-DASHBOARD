@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Monitoring Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Process Monitoring Dashboard</h1>
+        
+        <div class="dashboard">
+            <div class="dashboard-header">
+                <h2>System Processes</h2>
+                <button id="refresh-btn">Refresh</button>
+            </div>
+            
+            <div class="metrics-panel">
+                <div class="metric" id="cpu-usage">
+                    <h3>CPU Usage</h3>
+                    <div class="metric-value">0%</div>
+                    <div class="metric-chart"></div>
+                </div>
+                <div class="metric" id="memory-usage">
+                    <h3>Memory Usage</h3>
+                    <div class="metric-value">0%</div>
+                    <div class="metric-chart"></div>
+                </div>
+                <div class="metric" id="disk-usage">
+                    <h3>Disk Usage</h3>
+                    <div class="metric-value">0%</div>
+                    <div class="metric-chart"></div>
+                </div>
+            </div>
+            
+            <div class="process-list-container">
+                <table id="process-table">
+                    <thead>
+                        <tr>
+                            <th>PID</th>
+                            <th>Process Name</th>
+                            <th>CPU %</th>
+                            <th>Memory %</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="process-list">
+                        <!-- Process list will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
